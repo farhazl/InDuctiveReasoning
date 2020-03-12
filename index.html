@@ -1,0 +1,76 @@
+<!--
+MDIA 2109
+Inductive vs. Deductive
+-->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Inductive vs. Deductive</title>
+    <!-- STYLESHEET -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- HEADER -->
+    <div class="header">
+        <h1>Inductive vs. Deductive</h1>
+        <div class="toggleMenu" onclick="menuToggle()">
+            <center>
+                <h2>&#9776;</h2>
+            </center>
+        </div>
+    </div>
+    <!-- END HEADER -->
+
+    <!-- QUESTIONS THUMB MENU -->
+    <div class="questionMenu">
+        <p onclick="q1()"><span class="icon">&#10102;</span> - Question 1</p>
+        <p onclick="q2()"><span class="icon">&#10103;</span> - Question 2</p>
+        <p onclick=""><span class="icon">&#10104;</span> - Question 3</p>
+        <p onclick=""><span class="icon">&#10105;</span> - Question 4</p>
+        <p onclick=""><span class="icon">&#10106;</span> - Question 5</p>
+        <p onclick=""><span class="icon">&#10107;</span> - Question 6</p>
+        <p onclick=""><span class="icon">&#10108;</span> - Question 7</p>
+        <p onclick=""><span class="icon">&#10109;</span> - Question 8</p>
+        <p onclick=""><span class="icon">&#10110;</span> - Question 9</p>
+        <p onclick=""><span class="icon">&#10111;</span> - Question 10</p>
+    </div>
+    <!-- END QUESTIONS THUMB MENU -->
+
+    <!-- GAME BODY -->
+    <div>
+        <!-- GAME SCREEN -->
+        <div id="gameScreen" class="mainScreen">
+            <!-- TUTORIAL VIDEO -->
+            <div id="tutorialVideo">
+                <!-- <video width="80%" height="350" controls autoplay>
+                   <source src="images/tutorial.mp4" type="video/mp4">
+                </video>-->
+               <!-- YOUTUBE PLACEHOLDER VIDEO -->
+                <iframe width="80%" height="350" src="https://www.youtube.com/embed/ry1d0BRMLjE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+               <!-- END YOUTUBE PLACEHOLDER VIDEO -->
+            </div>
+            <!-- END TUTORIAL VIDEO -->
+            <!-- QUESTION BODY -->
+            <section id="questionBody">
+                <h1>Inductive vs. Deductive</h1>
+                <button type="button" id="startButton" class="button rounded-corners" onclick="startGame()">Start&nbsp;&#8680;</button>
+            </section>
+            <!-- END QUESTION BODY -->
+        </div>
+        <!-- END GAME SCREEN -->
+    </div>
+    <!-- END GAME BODY -->
+
+    <!-- FOOTER -->
+    <!-- <footer class="text-center">
+        <p>Footer</p>
+    </footer> -->
+    <!-- END FOOTER -->
+
+    <!-- JAVASCRIPT -->
+    <script src="main.js"></script>
+
+</body>
+</html>
