@@ -1,0 +1,417 @@
+/*
+MDIA 2109
+Inductive vs. Deductive
+*/
+
+/* General Style */
+* {
+  box-sizing: border-box;
+  font-family: "Lato", sans-serif;
+}
+
+/* Text Margins */
+h1, h2, h3, p {
+  margin: 0;
+}
+
+/* Body Section */
+body {
+  background-color: linen;
+  margin: 0;
+  padding: 10px;
+}
+
+/* Header Section */
+.header {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    align-items: center;
+    width: 100%;
+    height: 10%;
+    padding: 10px;
+    background-color: darkseagreen;
+    color: white;
+    border-radius: 10px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+}
+.toggleMenu {
+    align-content: center;
+    align-items: center;
+    overflow: hidden;
+    position: absolute;
+    display: block;
+    height: 9%;
+    width: 50px;
+    right: 10px;
+    padding: 10px 10px;
+    font-size: 16px;
+    border-radius: 5px 10px 10px 5px;
+    color: #fff;
+    background-color: cornflowerblue;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.toggleMenu:hover {
+    background-color: midnightblue;
+}
+
+
+/* Game Screen */
+#gameScreen {
+  width: 100%;
+  margin: 2.5% auto 0 auto;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+  border-radius: 10px;
+  background-color: #fff;
+  color: #444;
+  transition: 0.5s all;
+}
+
+#gameScreen:hover {
+  box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.25);
+}
+/* END Game Screen */
+
+/* Questions */
+.questionScreen {
+  padding: 10px;
+}
+
+/* First Screen Tutorial Video */
+#tutorialVideo {
+    background-color: black;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  text-align: center;
+}
+
+#tutorialVideo:before {
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 64px;
+  font-weight: 700;
+}
+/* END Tutorial Video */
+
+/* Question Image */
+#questionImg img{
+    width:100%;
+    padding: 25px;
+    padding-bottom: 5px;
+}
+
+/* Question Body */
+#questionBody {
+  padding: 15px;
+}
+
+/* Question Text */
+#questionBody h1 {
+  text-align: center;
+  font-size: 22px;
+  color: #444;
+  font-weight: 700;
+  margin: 0;
+}
+
+/* Question Progress Bar Container */
+#progressBar {
+  background-color: #eee;
+  height: 6px;
+  border-radius: 50px;
+  text-align: left;
+/*  position: relative;*/
+  margin-bottom: 12px;
+}
+
+/* Question Progress Bar Fill */
+#progress {
+  width: 0;
+    background-color: cornflowerblue;
+  border-radius: 50px;
+  display: inline-block;
+  height: inherit;
+  position: absolute;
+  transition: 0.75s width;
+}
+
+/* Question # / Score */
+#info {
+  display: flex;
+  justify-content: space-between;
+}
+
+#info p {
+  margin: 0;
+  font-size: 14px;
+}
+
+#info span {
+  color: #666;
+  font-weight: 700;
+}
+/* END Question # / Score */
+
+/* Answers */
+#answers h2 {
+  margin: 0px 0px 50px 0px;
+  color: #444;
+  font-size: 24px;
+}
+
+.answer {
+  padding: 5px;
+}
+
+/* Answer Text as label for input field */
+label {
+  display: block;
+  width: 100%;
+  padding: 15px;
+  background-color: #f5f5f5;
+  border-radius: 5px;
+  color: #666;
+  font-size: 18px;
+  transition: 0.2s background-color;
+}
+
+/* Answer input field */
+input[type="radio"]:hover:not(:disabled) + label {
+  background-color: rgba(0, 0, 0, 0.13);
+}
+
+input[type="radio"] {
+  opacity: 0;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+/* Correct / Incorrect Popup Container */
+#questionFeedback {
+  margin: 10px auto;
+  max-width: 100%;
+  border-radius: 10px;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+  text-align: center;
+}
+
+/* Correct / Incorrect Popup Text */
+#questionFeedback p {
+  margin-bottom: 15px;
+  font-size: 20px;
+  font-weight: bold;
+  color: #666;
+}
+
+/* Final Results Screen */
+#results {
+  padding: 20px;
+}
+
+/* Final Screen Headings */
+#results h2 {
+  font-size: 20px;
+}
+
+#results h3 {
+  font-size: 16px;
+  margin-top: 30px;
+  margin-bottom: 15px;
+}
+
+/* Final Screen Score as Percentage */
+#percentage {
+  font-size: 45px;
+  font-weight: 700;
+  display: block;
+  margin-top: 15px;
+  margin-bottom: 35px;
+}
+
+/* Question Thumb Menu */
+.questionMenu {
+  position: absolute;
+  display: none;
+  right: 0;
+  top: 55px;
+  max-width: 40%;
+  margin: 15px;
+  padding: 15px;
+  border-radius: 10px;
+  background-color: #fff;
+  box-shadow: 0px 8px 8px 0px rgba(0, 0, 0, 0.15);
+}
+
+/* Question Thumb Menu Text */
+.questionMenu p {
+  margin: 10px 0;
+}
+
+/* Question Thumb Menu Icon */
+.icon {
+  display: inline-block;
+  padding: 5px;
+  background-color: cornflowerblue;
+  color: #fff;
+  border-radius: 5px;
+  border-bottom: 1px solid cornflowerblue;
+  font-size: 14px;
+}
+
+.icon:hover {
+    background-color: midnightblue;
+}
+
+
+/* Footer Section */
+footer {
+  margin-top: 30px;
+}
+
+/* Buttons - Start, Next Question, Finish, Play Again */
+button {
+  display: block;
+  border: 0;
+  color: #fff;
+  font-size: 14px;
+  border-radius: 50px;
+      background-color: cornflowerblue;
+}
+
+/* Button Hover */
+button:hover {
+  background-color: midnightblue;
+}
+
+/* Utility classes */
+.text-center {
+  text-align: center;
+}
+.bold {
+  font-weight: 700;
+}
+.rounded-corners {
+  border-radius: 50px;
+}
+.display-block {
+  display: block;
+}
+
+.incorrectRed {
+  background-color: #f44336;
+  color: #fff;
+}
+.correctGreen {
+  background-color: #8bc34a;
+  color: #fff;
+}
+
+/* Start Button Full Width */
+#startButton {
+  width: 100%;
+  margin-top: 50px;
+  padding: 10px;
+  font-weight: 700;
+  text-transform: uppercase;
+  transition: 0.3s all;
+}
+
+/* Popup Buttons */
+#nextQuestionButton, #endGameButton {
+  margin: 0 auto;
+  padding: 10px 25px;
+}
+
+/* Menu Button */
+#menuToggleButton {
+  display: none;
+}
+
+/* Play Again Button at Final Screen */
+#playAgainButton {
+  margin: 0 auto;
+  padding: 10px 25px;
+  margin-top: 25px;
+}
+
+/* Media Queries for Responsive Design */
+@media (min-width: 576px) {
+  .mainScreen {
+    max-width: 50%;
+  }
+  .questionScreen {
+    max-width: 80%;
+  }
+  #questionFeedback {
+    max-width: 50%;
+    margin: 15px auto;
+  }
+  .answer {
+    display: inline-block;
+    width: 50%;
+  }
+    
+  #menuToggleButton {
+    position: fixed;
+    display: block;
+    bottom: 0;
+    right: 0;
+    margin: 15px;
+    padding: 5px 10px;
+    font-size: 12px;
+    border: 0;
+    border-radius: 50px;
+    color: #fff;
+    background-color: #aaa;
+    transition: 0.3s all;
+    z-index: 1;
+  }
+  #menuToggleButton:hover {
+    background-color: #888;
+  }
+
+  #menuToggleButton:active {
+    background-color: #555;
+  }
+}
+
+@media (min-width: 768px) {
+  .mainScreen {
+             max-width: 100%;
+  }
+  .questionScreen {
+             max-width: 100%;
+  }
+  #questionFeedback {
+    max-width: 30%;
+  }
+}
+
+@media (min-width: 992px) {
+  .mainScreen {
+             max-width: 100%;
+      height: 80vh;
+  }
+  .questionScreen {
+             max-width: 100%;
+    padding: 20px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .mainScreen {
+       max-width: 100%;
+      height: 80vh;
+  }
+  .questionScreen {
+       max-width: 100%;
+         height: 80vh;
+  }
+  #questionFeedback {
+    max-width: 20%;
+  }
+}
