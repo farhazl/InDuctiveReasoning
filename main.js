@@ -7,28 +7,64 @@ Inductive vs. Deductive
 // 1 = Yes / 2 = No
 var questions = [
     {
-        question: "Is the box is full of Mangos?",
+        question: "We KNOW that a Mango is a Fruit. We KNOW that the Box is full of Fruit. We DON'T know the type of Fruit in the Box <br> Is the Box full of Mangos?",
         image: "images/q1.png",
         answers: ["&#10003;&nbsp;Yes", "&#10007;&nbsp;No"],
-        correctAnswer: 1
-    },
-    {
-        question: "Question...",
-        image: "https://via.placeholder.com/728x90.png",
-        answers: ["&#10003;&nbsp;Yes", "&#10007;&nbsp;No"],
         correctAnswer: 2
     },
     {
-        question: "Question...",
-        image: "https://via.placeholder.com/728x90.png",
-        answers: ["&#10003;&nbsp;Yes", "&#10007;&nbsp;No"],
+        question: "We KNOW Cats and Dogs are Animals. We KNOW that Cats and Dogs are Pets.",
+        image: "images/q2.png",
+        answers: ["&#10003;&nbsp;All Animals are Pets", "&#10007;&nbsp;All Animals are not Pets"],
+        correctAnswer: 2
+    },
+    {
+        question: "We KNOW Henry is a Teacher. We KNOW Henry likes Sweet Food. We KNOW Strawberries are Sweet",
+        image: "images/q3.png",
+        answers: ["&#10003;&nbsp;Henry likes Strawberries", "&#10007;&nbsp;Henry dislikes Strawberries"],
         correctAnswer: 1
     },
     {
-        question: "Question...",
-        image: "https://via.placeholder.com/728x90.png",
-        answers: ["&#10003;&nbsp;Yes", "&#10007;&nbsp;No"],
+        question: "We KNOW Sarah owns both Red and Purple Pants. Today we KNOW she is wearing Pants",
+        image: "images/q4.png",
+        answers: ["&#10003;&nbsp;Sarah is wearing Red Pants", "&#10007;&nbsp;Sarah is wearing Purple Pants", "&#10003;&nbsp;Sarah is wearing Red or Purple Pants", "&#10003;&nbsp;Sarah is wearing a skirt",],
+        correctAnswer: 3
+    },
+    {
+        question: "We KNOW that Robins are Birds, We KNOW that Robins have feathers.",
+        image: "images/q5.png",
+        answers: ["&#10003;&nbsp;All Birds have Feathers", "&#10007;&nbsp;All Birds are Red", "&#10003;&nbsp;All Feathers are Red", "&#10003;&nbsp;All Birds can Fly",],
+        correctAnswer: 1
+    },
+    {
+        question: "What direction is this storm coming from?",
+        image: "images/q6.png",
+        answers: ["&#10003;&nbsp;North", "&#10007;&nbsp;South", "&#10003;&nbsp;East", "&#10003;&nbsp;West",],
+        correctAnswer: 1
+    },
+    {
+        question: "Is this Inductive or Deductive Reasoning?",
+        image: "images/q7.png",
+        answers: ["&#10003;&nbsp;Deductive", "&#10007;&nbsp;Inductive",],
         correctAnswer: 2
+    },
+    {
+        question: "Is this Inductive or Deductive Reasoning?",
+        image: "images/q8.png",
+        answers: ["&#10003;&nbsp;Deductive", "&#10007;&nbsp;Indeductive",],
+        correctAnswer: 1
+    },
+    {
+        question: "",
+        image: "images/q9.png",
+        answers: ["&#10003;&nbsp;All Dolphins are Fish", "&#10007;&nbsp;All Mammals are Dolphins", "&#10003;&nbsp;Dolphins do not have Stomachs", "&#10003;&nbsp;All Dolphins have Stomachs",],
+        correctAnswer: 4
+    },
+    {
+        question: "Mike finished ahead of Paul. Paul and Brian both finished before Liam. Owen did not finish last. Who was the last to finish?",
+        image: "images/q10.png",
+        answers: ["&#10003;&nbsp;Mike", "&#10007;&nbsp;Paul", "&#10003;&nbsp;Liam", "&#10003;&nbsp;Brian",],
+        correctAnswer: 3
     }
   ];
 
