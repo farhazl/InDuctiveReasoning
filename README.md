@@ -1,1 +1,1 @@
-# InDuctiveReasoning
+# InductiveReasoning
