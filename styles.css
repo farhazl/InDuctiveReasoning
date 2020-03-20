@@ -88,9 +88,9 @@ background: linear-gradient(45deg, rgba(164,72,160,1) 0%, rgba(242,54,68,1) 50%,
 }
 
 #tutorialVideo {
-background: rgb(164,72,160);
+  /*background-color: white;*/
+  background: rgb(164,72,160);
 background: linear-gradient(45deg, rgba(164,72,160,1) 0%, rgba(242,54,68,1) 50%, rgba(253,192,108,1) 100%);
-/*  background-color: black;*/
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
   text-align: center;
