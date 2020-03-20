@@ -27,7 +27,7 @@ var questions = [
     {
         question: "We KNOW Sarah owns both Red and Purple Pants. Today we KNOW she is wearing Pants",
         image: "images/q4.png",
-        answers: ["Sarah is wearing Red Pants", "Sarah is wearing Purple Pants", "&#10003;&nbsp;Sarah is wearing Red or Purple Pants", "&#10003;&nbsp;Sarah is wearing a skirt",],
+        answers: ["Sarah is wearing Red Pants", "Sarah is wearing Purple Pants", "Sarah is wearing Red or Purple Pants", "Sarah is wearing a skirt",],
         correctAnswer: 3
     },
     {
