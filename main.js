@@ -15,55 +15,55 @@ var questions = [
     {
         question: "We KNOW Cats and Dogs are Animals. We KNOW that Cats and Dogs are Pets.",
         image: "images/q2.png",
-        answers: ["&#10003;&nbsp;All Animals are Pets", "&#10007;&nbsp;All Animals are not Pets"],
+        answers: ["All Animals are Pets", "All Animals are not Pets"],
         correctAnswer: 2
     },
     {
         question: "We KNOW Henry is a Teacher. We KNOW Henry likes Sweet Food. We KNOW Strawberries are Sweet",
         image: "images/q3.png",
-        answers: ["&#10003;&nbsp;Henry likes Strawberries", "&#10007;&nbsp;Henry dislikes Strawberries"],
+        answers: ["Henry likes Strawberries", "Henry dislikes Strawberries"],
         correctAnswer: 1
     },
     {
         question: "We KNOW Sarah owns both Red and Purple Pants. Today we KNOW she is wearing Pants",
         image: "images/q4.png",
-        answers: ["&#10003;&nbsp;Sarah is wearing Red Pants", "&#10007;&nbsp;Sarah is wearing Purple Pants", "&#10003;&nbsp;Sarah is wearing Red or Purple Pants", "&#10003;&nbsp;Sarah is wearing a skirt",],
+        answers: ["Sarah is wearing Red Pants", "Sarah is wearing Purple Pants", "&#10003;&nbsp;Sarah is wearing Red or Purple Pants", "&#10003;&nbsp;Sarah is wearing a skirt",],
         correctAnswer: 3
     },
     {
         question: "We KNOW that Robins are Birds, We KNOW that Robins have feathers.",
         image: "images/q5.png",
-        answers: ["&#10003;&nbsp;All Birds have Feathers", "&#10007;&nbsp;All Birds are Red", "&#10003;&nbsp;All Feathers are Red", "&#10003;&nbsp;All Birds can Fly",],
+        answers: ["All Birds have Feathers", "All Birds are Red", "All Feathers are Red", "All Birds can Fly",],
         correctAnswer: 1
     },
     {
         question: "What direction is this storm coming from?",
         image: "images/q6.png",
-        answers: ["&#10003;&nbsp;North", "&#10007;&nbsp;South", "&#10003;&nbsp;East", "&#10003;&nbsp;West",],
+        answers: ["North", "South", "East", "West",],
         correctAnswer: 1
     },
     {
         question: "Is this Inductive or Deductive Reasoning?",
         image: "images/q7.png",
-        answers: ["&#10003;&nbsp;Deductive", "&#10007;&nbsp;Inductive",],
+        answers: ["Deductive", "Inductive",],
         correctAnswer: 2
     },
     {
         question: "Is this Inductive or Deductive Reasoning?",
         image: "images/q8.png",
-        answers: ["&#10003;&nbsp;Deductive", "&#10007;&nbsp;Indeductive",],
+        answers: ["Deductive", "Indeductive",],
         correctAnswer: 1
     },
     {
         question: "",
         image: "images/q9.png",
-        answers: ["&#10003;&nbsp;All Dolphins are Fish", "&#10007;&nbsp;All Mammals are Dolphins", "&#10003;&nbsp;Dolphins do not have Stomachs", "&#10003;&nbsp;All Dolphins have Stomachs",],
+        answers: ["All Dolphins are Fish", "All Mammals are Dolphins", "Dolphins do not have Stomachs", "All Dolphins have Stomachs",],
         correctAnswer: 4
     },
     {
         question: "Mike finished ahead of Paul. Paul and Brian both finished before Liam. Owen did not finish last. Who was the last to finish?",
         image: "images/q10.png",
-        answers: ["&#10003;&nbsp;Mike", "&#10007;&nbsp;Paul", "&#10003;&nbsp;Liam", "&#10003;&nbsp;Brian",],
+        answers: ["Mike", "Paul", "Liam", "Brian",],
         correctAnswer: 3
     }
   ];
