@@ -221,3 +221,59 @@ function q2(){
     currentQuestion = 2;
     showQuestions();
 }
+
+function q3(){
+    startGame();
+    questionIndex = 2;
+    currentQuestion = 3;
+    showQuestions();
+}
+
+function q4(){
+    startGame();
+    questionIndex = 3;
+    currentQuestion = 4;
+    showQuestions();
+}
+
+function q5(){
+    startGame();
+    questionIndex = 4;
+    currentQuestion = 5;
+    showQuestions();
+}
+
+function q6(){
+    startGame();
+    questionIndex = 5;
+    currentQuestion = 6;
+    showQuestions();
+}
+
+function q7(){
+    startGame();
+    questionIndex = 6;
+    currentQuestion = 7;
+    showQuestions();
+}
+
+function q8(){
+    startGame();
+    questionIndex = 7;
+    currentQuestion = 8;
+    showQuestions();
+}
+
+function q9(){
+    startGame();
+    questionIndex = 8;
+    currentQuestion = 9;
+    showQuestions();
+}
+
+function q10(){
+    startGame();
+    questionIndex = 9;
+    currentQuestion = 10;
+    showQuestions();
+}
